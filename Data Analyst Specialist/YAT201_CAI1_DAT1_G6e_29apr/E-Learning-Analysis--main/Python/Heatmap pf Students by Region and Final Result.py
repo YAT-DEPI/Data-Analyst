@@ -1,0 +1,7 @@
+demographic_data = student_info.groupby(['region', 'final_result']).size().unstack()
+plt.figure(figsize=(12, 8))
+sns.heatmap(demographic_data, annot=True, fmt='d', cmap='YlGnBu')
+plt.title('Heatmap of Students by Region and Final Result')
+plt.xlabel('Final Result')
+plt.ylabel('Region')
+plt.show()

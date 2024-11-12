@@ -1,0 +1,7 @@
+plt.figure(figsize=(12, 6))
+sns.boxplot(x='assessment_type', y='score', data=merged_data)
+plt.title('Score Distribution by Assessment Type')
+plt.xlabel('Assessment Type')
+plt.ylabel('Score')
+plt.xticks(rotation=45)
+plt.show()

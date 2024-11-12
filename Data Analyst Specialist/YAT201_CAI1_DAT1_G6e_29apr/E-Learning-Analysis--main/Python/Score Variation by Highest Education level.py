@@ -1,0 +1,7 @@
+plt.figure(figsize=(12, 6))
+sns.boxplot(x='highest_education', y='score', data=merged_data)
+plt.title('Score Variation by Highest Education Level')
+plt.xlabel('Highest Education Level')
+plt.ylabel('Score')
+plt.xticks(rotation=45)
+plt.show()

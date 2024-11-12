@@ -1,0 +1,8 @@
+score_trend = student_assessment.groupby('date_submitted')['score'].mean().reset_index()
+plt.figure(figsize=(10, 6))
+sns.lineplot(x='date_submitted', y='score', data=score_trend)
+plt.title('Trends in Average Scores Over Time')
+plt.xlabel('Day Submitted')
+plt.ylabel('Average Score')
+plt.xticks(rotation=45)
+plt.show()
