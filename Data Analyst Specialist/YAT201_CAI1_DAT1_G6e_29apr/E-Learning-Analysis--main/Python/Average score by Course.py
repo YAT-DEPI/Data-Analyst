@@ -1,8 +1,0 @@
-plt.figure(figsize=(10, 6))
-avg_scores = merged_data.groupby('code_module')['score'].mean().reset_index()
-sns.barplot(x='code_module', y='score', data=avg_scores)
-plt.title('Average Score by Course')
-plt.xlabel('Course')
-plt.ylabel('Average Score')
-plt.xticks(rotation=45)
-plt.show()
